@@ -51,14 +51,15 @@ class CDBCalculator {
 
         // Append row to tbody
         this.tableBody.appendChild(tr);
+        this.calculateIncome(data.baseIncome, inputNumber, inputText);
       });
     });
   }
 
   calculateIncome(baseIncome, cashField, balanceField) {
-    cashField.addEventlister("input", () => {
+    cashField.addEventListener("input", () => {
       let calculate = baseIncome - +cashField.value;
-      return (balanceField.value = calculate);
+      return (balanceField.value = calculate.toFixed(2));
     });
   }
 }
