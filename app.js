@@ -13,6 +13,7 @@ class CDBCalculator {
     this.tableBody = document.querySelector("tbody");
   }
 
+  // create table dynamically
   createTableDate() {
     const getdata = new CallJsonData("/data.json");
     getdata.getJson().then((res) => {
