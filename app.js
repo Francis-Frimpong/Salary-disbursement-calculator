@@ -56,9 +56,9 @@ class CDBCalculator {
     });
   }
 
-  calculateIncome(baseIncome, cashField, balanceField) {
-    cashField.addEventListener("input", () => {
-      let calculate = baseIncome - +cashField.value;
+  calculateIncome(baseIncome, allocationField, balanceField) {
+    allocationField.addEventListener("input", () => {
+      let calculate = baseIncome - +allocationField.value;
       return (balanceField.value = calculate.toFixed(2));
     });
   }
