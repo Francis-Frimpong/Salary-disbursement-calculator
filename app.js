@@ -56,6 +56,7 @@ class CDBCalculator {
     });
   }
 
+  // Caculate allocated Income
   calculateIncome(baseIncome, allocationField, balanceField) {
     allocationField.addEventListener("input", () => {
       let calculate = baseIncome - +allocationField.value;
