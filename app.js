@@ -8,7 +8,7 @@ class CallJsonData {
   }
 }
 
-class CDBCalculator {
+class SDBCalculator {
   constructor() {
     this.tableBody = document.querySelector("tbody");
   }
@@ -66,5 +66,5 @@ class CDBCalculator {
   }
 }
 
-const calculate = new CDBCalculator();
+const calculate = new SDBCalculator();
 calculate.createTableDate();
